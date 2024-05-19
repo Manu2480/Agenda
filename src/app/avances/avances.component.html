@@ -1,0 +1,26 @@
+<!-- Contenedor principal de la sección de avances -->
+<div class="avances-container">
+    <!-- Título de la sección -->
+    <h2 class="avances-title">Avances</h2>
+    <!-- Tabla para mostrar la información de avances -->
+    <table class="avances-table">
+      <tr>
+        <td class="avances-label">Total de tareas:</td>
+        <td class="avances-value">{{ totalTareas }}</td>
+      </tr>
+      <tr>
+        <td class="avances-label">Tareas completadas:</td>
+        <td class="avances-value">{{ tareasCompletadas }}</td>
+      </tr>
+      <tr>
+        <td class="avances-label">Porcentaje completado:</td>
+        <td class="avances-value">{{ porcentajeCompletado }}%</td>
+      </tr>
+    </table>
+    <!-- Barra de progreso -->
+    <div class="avances-progress-container">
+      <progress class="avances-progress" max="100" value="{{ porcentajeCompletado }}"></progress>
+      <span class="avances-progress-value">{{ porcentajeCompletado }}%</span>
+    </div>
+  </div>
+  

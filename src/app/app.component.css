@@ -1,0 +1,36 @@
+/* styles.css */
+.portada {
+    position: relative; /* Cambiamos a posición relativa */
+    z-index: 1; /* Ajustamos el z-index para que esté encima de la barra de navegación */
+    background-color: #333; /* Color de fondo */
+    color: white; /* Color del texto */
+    text-align: center; /* Centramos el texto */
+    padding: 20px; /* Espaciado interno */
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2); /* Sombra */
+  }
+  
+  nav {
+    background-color: #444; /* Color de fondo de la barra de navegación */
+    padding: 10px; /* Espaciado interno */
+    position: relative; /* Ajuste de posición relativa para el contenido debajo */
+    z-index: 0; /* Ajustamos el z-index para que esté debajo de la portada */
+    display: flex; /* Convertimos la barra de navegación en un flex container */
+    justify-content: space-between; /* Distribuimos los elementos horizontalmente */
+    align-items: center; /* Centra los elementos verticalmente */
+  }
+
+  nav h1 {
+    margin: 0; /* Quita el margen por defecto del título */
+  }
+  
+  nav a {
+    color: white; /* Color del texto de los enlaces */
+    text-decoration: none; /* Quitamos el subrayado */
+    margin-right: 10px; /* Margen derecho entre los enlaces */
+    flex: 1; /* Los elementos ocuparán todo el espacio disponible */
+  }
+  
+  nav a:hover {
+    color: lightgray; /* Color del texto al pasar el cursor */
+  }
+  

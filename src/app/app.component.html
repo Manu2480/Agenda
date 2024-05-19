@@ -1,0 +1,18 @@
+<!-- Sección de la portada -->
+<div class="portada">
+  <h1>Bienvenido a Mi Aplicación</h1> <!-- Encabezado de bienvenida -->
+</div>
+
+<!-- Barra de navegación -->
+<nav>
+  <!-- Enlaces de la barra de navegación que dirigen a diferentes componentes de la aplicación -->
+  <a routerLink="/notas">Notas</a> <!-- Enlace para navegar al componente de Notas -->
+  <a routerLink="/tareas">Tareas</a> <!-- Enlace para navegar al componente de Tareas -->
+  <a routerLink="/avances">Avances</a> <!-- Enlace para navegar al componente de Avances -->
+</nav>
+
+<!-- Salida del enrutador -->
+<router-outlet></router-outlet> <!-- Aquí se mostrarán los componentes según la ruta actual -->
+
+<!-- Pie de Pagina -->
+<app-footer></app-footer>

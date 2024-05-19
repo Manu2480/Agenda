@@ -1,0 +1,60 @@
+/* Estilo para el contenedor de tareas */
+.tareas-container {
+  text-align: center; /* Centra el contenido horizontalmente */
+  margin-top: 20px; /* Añade un margen superior */
+}
+
+/* Estilo para el formulario de tareas */
+.tarea-form {
+  display: flex;
+  justify-content: center; /* Centra los elementos del formulario horizontalmente */
+  margin-bottom: 20px; /* Añade un margen inferior */
+}
+
+/* Estilo para el campo de entrada de tareas */
+.tarea-input {
+  margin-right: 10px; /* Añade un espacio entre el campo de entrada y el botón */
+  padding: 8px; /* Añade un relleno al campo de entrada */
+  border: 1px solid #ccc; /* Añade un borde */
+  border-radius: 5px; /* Añade esquinas redondeadas */
+}
+
+/* Estilo para el botón de agregar tareas */
+.agregar-button {
+  padding: 8px 16px; /* Añade un relleno al botón */
+  border: none; /* Elimina el borde */
+  background-color: #007bff; /* Establece el color de fondo */
+  color: #fff; /* Establece el color del texto */
+  border-radius: 5px; /* Añade esquinas redondeadas */
+  cursor: pointer; /* Cambia el cursor al pasar por encima */
+}
+
+/* Estilo para la tabla de tareas */
+.tareas-table {
+  width: 100%; /* Ocupa todo el ancho disponible */
+  border-collapse: collapse; /* Fusiona los bordes de la tabla */
+}
+
+/* Estilo para las celdas de la tabla */
+.tareas-table th,
+.tareas-table td {
+  padding: 8px; /* Añade un relleno a las celdas */
+  border-bottom: 1px solid #ddd; /* Añade un borde inferior */
+  text-align: center; /* Centra el contenido horizontalmente */
+}
+
+/* Estilo para las tareas marcadas como hechas */
+.hecha {
+  text-decoration: line-through; /* Dibuja una línea a través del texto para indicar que está hecho */
+  color: gray; /* Cambia el color del texto a gris para desactivar visualmente la tarea */
+}
+
+/* Estilo para el botón de eliminar dentro de cada tarea */
+.eliminar-button {
+  padding: 6px 12px; /* Añade un relleno al botón */
+  border: none; /* Elimina el borde */
+  background-color: #dc3545; /* Establece el color de fondo */
+  color: #fff; /* Establece el color del texto */
+  border-radius: 5px; /* Añade esquinas redondeadas */
+  cursor: pointer; /* Cambia el cursor al pasar por encima */
+}

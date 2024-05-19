@@ -1,0 +1,37 @@
+<!-- Contenedor principal para las notas -->
+<div class="notas-container">
+  <!-- Formulario para agregar una nueva nota -->
+  <form class="nota-form">
+    <!-- Campo de entrada de texto enlazado a la variable 'nuevaNota' en el componente -->
+    <input [(ngModel)]="nuevaNota" class="nota-input" placeholder="Nueva Nota" name="nuevaNota">
+    <!-- Botón para agregar la nota, llama a la función 'agregarNota' al hacer clic -->
+    <button type="button" class="agregar-button" (click)="agregarNota()">Agregar Nota</button>
+  </form>
+</div>
+
+<!-- Tabla para mostrar las notas -->
+<table class="notas-table">
+  <!-- Encabezado de la tabla -->
+  <thead>
+    <tr>
+      <th>Número</th>
+      <th>Nota</th>
+      <th>Acciones</th>
+    </tr>
+  </thead>
+  <!-- Cuerpo de la tabla -->
+  <tbody>
+    <!-- Itera sobre las notas obtenidas del servicio de notas, creando una fila para cada una -->
+    <tr *ngFor="let nota of notasService.obtenerNotas(); let i = index">
+      <!-- Muestra el número de la nota -->
+      <td>{{ i + 1 }}</td>
+      <!-- Muestra el texto de la nota -->
+      <td>{{ nota }}</td>
+      <!-- Botones para eliminar y editar la nota -->
+      <td>
+        <button class="eliminar-button" (click)="eliminarNota(i)">Eliminar</button>
+        <!-- <button class="editar-button" (click)="editarNota(i)">Editar</button> -->
+      </td>
+    </tr>
+  </tbody>
+</table>

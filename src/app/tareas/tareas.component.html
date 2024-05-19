@@ -1,0 +1,34 @@
+<!-- Contenedor principal de la sección de tareas -->
+<div class="tareas-container">
+  <!-- Formulario para agregar una nueva tarea -->
+  <form class="tarea-form">
+    <!-- Campo de entrada enlazado bidireccionalmente con la variable 'nuevaTarea' -->
+    <input [(ngModel)]="nuevaTarea" class="tarea-input" placeholder="Nueva Tarea" name="nuevaTarea">
+    <!-- Botón para agregar una nueva tarea, llama al método 'agregarTarea' al hacer clic -->
+    <button type="button" class="agregar-button" (click)="agregarTarea()">Agregar Tarea</button>
+  </form>
+</div>
+
+<!-- Lista de tareas -->
+<table class="tareas-table">
+  <!-- Encabezado de la tabla -->
+  <thead>
+    <tr>
+      <th>Completada</th>
+      <th>Descripción</th>
+      <th>Acciones</th>
+    </tr>
+  </thead>
+  <!-- Cuerpo de la tabla -->
+  <tbody>
+    <!-- Itera sobre cada tarea obtenida del servicio de tareas -->
+    <tr *ngFor="let tarea of tareasService.obtenerTareas(); let i = index">
+      <!-- Checkbox para marcar la tarea como completada -->
+      <td><input type="checkbox" [checked]="tarea.hecha" (change)="marcarTareaComoHecha(i)"></td>
+      <!-- Descripción de la tarea -->
+      <td><span [class.hecha]="tarea.hecha">{{ tarea.descripcion }}</span></td>
+      <!-- Botón para eliminar la tarea -->
+      <td><button class="eliminar-button" (click)="eliminarTarea(i)">Eliminar</button></td>
+    </tr>
+  </tbody>
+</table>

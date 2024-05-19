@@ -1,0 +1,58 @@
+/* Estilo para la tabla de avances */
+.avances-table {
+    margin: 10px auto; /* Centra la tabla horizontalmente y agrega espacio vertical */
+    border-collapse: collapse; /* Combina los bordes de las celdas */
+    width: 100%; /* Ajusta el ancho de la tabla al 100% */
+  }
+  
+  /* Estilo para las celdas de la tabla de avances */
+  .avances-table td {
+    padding: 8px 12px; /* Agrega espacio interno a las celdas */
+    border-bottom: 1px solid #ccc; /* Agrega una línea divisoria en la parte inferior de cada fila */
+  }
+  
+  /* Estilo para el título de la sección */
+  .avances-title {
+    font-size: 24px; /* Tamaño de fuente más grande */
+    color: #333; /* Color de texto oscuro */
+    margin-bottom: 10px; /* Espacio inferior para separar del contenido siguiente */
+  }
+  
+  /* Estilo para el valor de avance */
+  .avances-value {
+    color: #007bff; /* Color de texto azul para resaltar */
+  }
+  
+/* Estilo para la barra de progreso */
+.avances-progress {
+    width: 100%; /* Ajusta la anchura de la barra de progreso al 100% */
+    height: 20px; /* Establece la altura deseada */
+    border-radius: 10px; /* Agrega bordes redondeados */
+    /* Establece un degradado horizontal con colores dinámicos según el porcentaje completado */
+    background-image: linear-gradient(to right, #f50000, #33ff00);
+  }
+  
+  /* Estilo para el relleno de la barra de progreso */
+  .avances-progress::-webkit-progress-value {
+    /* Establece un degradado horizontal con colores dinámicos según el porcentaje completado */
+    background-image: linear-gradient(to right, #f50000, #33ff00);
+  }
+  
+  /* Estilo para la barra de progreso */
+.avances-progress-container {
+    position: relative; /* Establece el posicionamiento relativo para los elementos internos */
+    width: 100%; /* Ajusta la anchura de la barra de progreso al 100% */
+  }
+  
+  /* Estilo para el valor de avance dentro de la barra de progreso */
+  .avances-progress-value {
+    position: absolute; /* Establece el posicionamiento absoluto */
+    top: 0; /* Alinea el valor en la parte superior */
+    left: 50%; /* Lo centra horizontalmente */
+    transform: translateX(-50%); /* Corrige la posición para que esté centrado */
+    color: #fff; /* Color de texto blanco */
+    font-size: 14px; /* Tamaño de fuente */
+    white-space: nowrap; /* Evita el desbordamiento de texto */
+    z-index: 1; /* Coloca el valor sobre la barra de progreso */
+  }
+  

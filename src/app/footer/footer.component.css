@@ -1,0 +1,10 @@
+.footer {
+    position: fixed; /* Establece la posición fija */
+    bottom: 0; /* Lo sitúa en la parte inferior de la pantalla */
+    width: 100%; /* Ocupa todo el ancho disponible */
+    background-color: #f8f9fa; /* Color de fondo */
+    padding: 10px 0; /* Añade un relleno al pie de página */
+    text-align: center; /* Centra el contenido horizontalmente */
+    border-top: 1px solid #ddd; /* Agrega un borde superior */
+  }
+  

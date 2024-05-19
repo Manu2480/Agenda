@@ -1,0 +1,56 @@
+/* Estilo para el contenedor de notas */
+.notas-container {
+  text-align: center; /* Centra el contenido horizontalmente */
+  margin-top: 20px; /* Añade un margen superior */
+}
+
+/* Estilo para el formulario de notas */
+.nota-form {
+  display: flex;
+  justify-content: center; /* Centra los elementos del formulario horizontalmente */
+  margin-bottom: 20px; /* Añade un margen inferior */
+}
+
+/* Estilo para el campo de entrada de notas */
+.nota-input {
+  margin-right: 10px; /* Añade un espacio entre el campo de entrada y el botón */
+  padding: 8px; /* Añade un relleno al campo de entrada */
+  border: 1px solid #ccc; /* Añade un borde */
+  border-radius: 5px; /* Añade esquinas redondeadas */
+}
+
+/* Estilo para el botón de agregar notas */
+.agregar-button {
+  padding: 8px 16px; /* Añade un relleno al botón */
+  border: none; /* Elimina el borde */
+  background-color: #007bff; /* Establece el color de fondo */
+  color: #fff; /* Establece el color del texto */
+  border-radius: 5px; /* Añade esquinas redondeadas */
+  cursor: pointer; /* Cambia el cursor al pasar por encima */
+}
+
+/* Estilo para la tabla de notas */
+.notas-table {
+  width: 100%; /* Ocupa todo el ancho disponible */
+  border-collapse: collapse; /* Fusiona los bordes de la tabla */
+}
+
+/* Estilo para las celdas de la tabla */
+.notas-table th,
+.notas-table td {
+  padding: 8px; /* Añade un relleno a las celdas */
+  border-bottom: 1px solid #ddd; /* Añade un borde inferior */
+  text-align: center; /* Centra el contenido horizontalmente */
+}
+
+/* Estilo para los botones de acción */
+.eliminar-button,
+.editar-button {
+  padding: 6px 12px; /* Añade un relleno al botón */
+  border: none; /* Elimina el borde */
+  background-color: #dc3545; /* Establece el color de fondo */
+  color: #fff; /* Establece el color del texto */
+  border-radius: 5px; /* Añade esquinas redondeadas */
+  cursor: pointer; /* Cambia el cursor al pasar por encima */
+  margin-left: 5px; /* Añade un margen a la izquierda */
+}
